@@ -155,5 +155,29 @@ body{
 }
 
 .formacion{
+    background-color: #EAF2FD;
+}
+
+.formacion-titulo{
+    padding-top: 3rem;
     text-align: center;
+}
+
+.formacion-container{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.formacion-item span{
+    color: #219ebc;
+}
+
+.formacion-item a{
+    border-bottom: 2px solid #219ebc;
+    transition: 150ms all;
+}
+
+.formacion-item a:hover{
+    border-bottom: 2px solid #264653;
+    color: #14213d;
 }
