@@ -1,0 +1,159 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* seccion del header */
+.menu__header{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__list{
+    display: flex;
+    gap: 3rem;
+}
+
+.menu__list__item a{
+    transition: 150ms;
+}
+
+.menu__list__item a:hover, .links-social li a:hover{
+    border-bottom: 2px solid #219ebc;
+    /* font-size: 18px; */
+}
+
+/* .logo{
+    width: 300px;
+    border-radius: 50px;
+} */
+
+.info .container{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.links-social{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.links-social li a img{
+    margin-left: 3px;
+}
+
+.links-social li a{
+    transition: 150ms all;
+}
+
+.tittle-container{
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    order: -1;
+}
+
+.tittle-container h1{
+    font-size: 2rem;
+}
+
+.tittle-container p{
+    font-size: 1.2rem;
+}
+
+.titulo-sobre{
+    font-size: 20px;
+    color: #495057;
+}
+
+.sobre-mi{
+    padding: 3rem 5rem;
+    background-color: #EAF2FD;
+}
+
+.firma-img{
+    width: 100px;
+}
+
+.skills-titulo, .hobbies-titulo, .formacion-titulo{
+    font-weight: bold;
+    font-size: 26px;
+    color:  #464646;
+}
+
+.skills{
+    text-align: center;
+}
+
+
+/* .skill-item{
+    background-color: #fdfdfd;
+}  */
+
+.skills-container, .hobbies-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-name, .hobbies-name{
+    padding: 3px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.skill-item, .hobbies-item{
+    transition: 150ms all;
+}
+
+.skill-item:hover, .hobbies-item:hover{
+    transform: scale(1.1);
+}
+
+.hobbies{
+    text-align: center;
+}
+
+.hobbies-titulo, .formacion-titulo{
+    margin-top: 4rem;
+}
+
+.formacion{
+    text-align: center;
+}
