@@ -7,24 +7,27 @@
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="menu__header">
-        <h2 class="menu__title">Miguel Ángel</h2>
-        <nav>
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="header">
+        <header class="menu__header">
+            <h2 class="menu__title">Miguel Ángel</h2>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                    <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
     <main>
         <!-- seccion del header principal -->
         <section class="info">
@@ -45,7 +48,7 @@
         </section>
 
         <!-- seccion sobre mi -->
-        <section class="about">
+        <section class="about" id="sobre-mi">
             <div class="sobre-mi">
                 <h3 class="titulo-sobre">Sobre mi</h3>
                 <p class="sobre-parrafo">Como dije anteriormente me llamo Miguel Ángel García, soy un jovén colombiano apasionado <br> sobre todo el mundo de la tecnología, videojuegos y por supuesto la programación :)</p>
@@ -55,7 +58,7 @@
         </section>
 
         <!-- seccion de skills -->
-        <section class="skills">
+        <section class="skills" id="skills">
             <h3 class="skills-titulo">Adquiriendo habilidades en:</h3>
             <div class="skills-container">
                 <div class="skill-item">
@@ -98,7 +101,7 @@
         </section>
 
         <!-- seccion de hobbies -->
-        <section class="hobbies">
+        <section class="hobbies" id="hobbies">
             <h3 class="hobbies-titulo">Mis hobbies</h3>
             <div class="hobbies-container">
                 <div class="hobbies-item">
@@ -141,8 +144,8 @@
         </section>
 
         <!-- seccion de formacion academica -->
-        <section class="formacion">
-            <h3 class="formacion-titulo">Formacion academica</h3>
+        <section class="formacion" id="formacion">
+            <h3 class="formacion-titulo">Formación academica</h3>
             <div class="formacion-container">
                 <ul>
                     <li class="formacion-item"><h3>Estudiante de programación en <a href="https://www.misiontic2022.gov.co/portal/" target="_blank">MisionTic 2022</a> - <span>En curso</span></h3></li>
@@ -153,7 +156,7 @@
         </section>
 
         <!-- seccion de proyectos -->
-        <section class="proyectos">
+        <section class="proyectos" id="xp">
             <h3 class="proyectos-titulo">Proyectos</h3>
             <div class="proyecto-1">
                 <img src="assets/proyecto-1.png" alt="proyecto-1" class="proyecto-1-img">
@@ -173,7 +176,7 @@
                     <h4>Juego del ahorcado</h4>
                     <p>Juego desarrollado con HTML, CSS y JavaScript</p>
                     <br>
-                    <ul class="proyecto-links">
+                    <ul class="proyecto-links proyecto-links-2">
                         <li class="proyecto-item btn btn-repo"><a href="https://github.com/Mangelzz/ahorcado-Game" target="_blank">Repositorio</a></li>
                         <li class="proyecto-item btn btn-probar"><a href="https://mangelzz.github.io/ahorcado-Game/" target="_blank">Probar</a></li>
                     </ul>
@@ -182,25 +185,29 @@
         </section>
 
         <!-- seccion de contacto -->
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <h3 class="contacto-titulo">Contacto</h3>
-            <form action="post">
+            <form action="">
                 <div class="contacto-container">
                     <img src="assets/contacto.jpg" alt="contacto" class="img-contacto">
                     <div class="contacto-form">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" required>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required placeholder="usuario@example.com">
+                        <!-- <label for="nombre">Nombre</label> -->
+                        <input type="text" required placeholder="Ingrese su nombre aquí">
+                        <!-- <label for="email">Email</label> -->
+                        <input type="email" name="email" id="email" required placeholder="Ingrese su Email aquí">
                         <input type="text" required placeholder="Asunto">
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje" placeholder="mensaje"></textarea>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje" placeholder="Mensaje"></textarea>
                         <button type="submit" class="btn-enviar">Enviar formulario</button>
                     </div>
                 </div>
             </form>
         </section>
-
-        <!-- seccion del footer -->
     </main>
+    <!-- seccion del footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="info-footer">Desarrollado por <span>Miguel Ángel G.</span> - 2022</p>
+        </div>
+    </footer>
 </body>
 </html>

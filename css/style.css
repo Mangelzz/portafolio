@@ -11,13 +11,21 @@ coloque nas sessões indicadas*/
    --cor-de-link: #000;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 60px;
+}
+
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
-    line-height: 1;
+    line-height: 1; 
 }
 ol, ul,li {
     list-style: none;
@@ -34,9 +42,16 @@ body{
 
 /* seccion del header */
 .menu__header{
-    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    background-color: #f3f1f1f8;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .menu__list{
@@ -96,7 +111,7 @@ body{
 
 .tittle-container p{
     font-size: 1.2rem;
-}
+} 
 
 .titulo-sobre{
     font-size: 20px;
@@ -155,6 +170,7 @@ body{
 }
 
 .formacion{
+    width: 100%;
     background-color: #EAF2FD;
 }
 
@@ -192,13 +208,13 @@ body{
     width: 50%;
 }
 
-.proyecto-contenido, .proyecto-contenido-2{
-    padding: 0 2rem;
-}
-
 .proyecto-links{
     display: flex;
     gap: 2rem;
+}
+
+.proyecto-links-2{
+    margin-left: 27px;
 }
 
 .btn a{
@@ -276,6 +292,9 @@ body{
     display: flex;
     justify-content: center;
 }
+.contacto-titulo{
+    margin-bottom: 0;
+}
 
 .contacto-form{
     margin-left: 10px;
@@ -300,6 +319,11 @@ body{
     background-color: #EAF2FD;
     border-bottom: 1px solid #0077b6;
     font-family: 'Raleway', sans-serif;
+    transition: 150ms all;
+}
+
+.contacto-form input:focus{
+    border-left: 1px solid #0077b6;
 }
 
 .contacto-form input::placeholder{
@@ -319,7 +343,7 @@ body{
 
 .btn-enviar{
     padding: 5px;
-    margin-top: 3rem;
+    margin-top: 2rem;
     width: 25%;
     height: 50px;
     border: none;
@@ -328,4 +352,20 @@ body{
     color: #F5F5F5;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 1rem;
+    transition: 150ms all;
+    border-radius: 5px;
+}
+
+.btn-enviar:hover{
+    transform: scale(1.05);
+}
+
+.footer-container{
+    text-align: center;
+    padding: 0;
+}
+
+.info-footer span{
+    color: #0077b6;
 }
