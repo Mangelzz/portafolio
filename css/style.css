@@ -16,7 +16,7 @@ html{
 }
 
 section[id]{
-    scroll-margin-top: 60px;
+    scroll-margin-top: 55px;
 }
 
 body {
@@ -121,6 +121,7 @@ body{
 .sobre-mi{
     padding: 3rem 5rem;
     background-color: #EAF2FD;
+    line-height: 1.4rem;
 }
 
 .firma-img{
@@ -202,6 +203,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.proyecto-contenido{
+    padding-left: 1rem;
+}
+
+.proyecto-contenido-2{
+    padding-right: 1rem;
 }
 
 .proyecto-1-img, .proyecto-2-img{

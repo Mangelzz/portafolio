@@ -64,6 +64,14 @@
         justify-content: center;
     }
 
+    .proyecto-contenido{
+        padding-left: 0;
+    }
+    
+    .proyecto-contenido-2{
+        padding-right: 0;
+    }
+
     .proyecto-1-img, .proyecto-2-img{
         width: 90%;
         border-radius: 10px;
